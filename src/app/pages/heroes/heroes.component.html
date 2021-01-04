@@ -46,15 +46,13 @@
     <p>
       <select class="form-control mx-sm-1 mb-2">
         <option value="">Mostrar por Nombre</option>
-        <option value="">Batman</option>
-        <option value="">Hulk</option>
-        <option value="">Robin</option>
+        <option value="{{ heroe.name }}" *ngFor="let heroe of hs.heroes">{{heroe.name}}</option>
+
       </select>
       <select class="form-control mx-sm-1 mb-2">
         <option value="">Mostrar por Apariencia</option>
-        <option value="">-</option>
-        <option value="">good</option>
-        <option value="">bad</option>
+        <option value="{{ apariencia. biography.alignment }}" *ngFor="let apariencia of hs.heroes">{{apariencia.biography.alignment}}</option>
+
       </select>
     </p>
   </div>
@@ -63,102 +61,21 @@
 <div class="album py-5 bg-light">
   <div class="container">
     <div class="row">
-      <div class="card mb-3 espacio" style="max-width: 540px">
+      <div class="card mb-3 espacio" style="max-width: 540px" *ngFor="let informacion of hs.heroes">
         <div class="row no-gutters">
           <div class="col-md-4">
             <img
-              src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/1-a-bomb.jpg"
+              [src]="informacion.images.md"
               class="card-img"
               alt="..."
             />
           </div>
           <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">Hulk</h5>
-              <p class="card-text">Hulk Vol 2 #2 (April, 2008) (as A-Bomb)</p>
+              <h5 class="card-title">{{informacion.name}}</h5>
+              <p class="card-text">{{informacion.biography.firstAppearance}}</p>
               <p class="card-text">
-                <small class="text-muted">Apariencia: good</small>
-              </p>
-
-              <p></p>
-              <p>
-                <button type="button" class="btn btn-primary btn-sm">
-                  Detalles
-                </button>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-3 espacio" style="max-width: 540px">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img
-              src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/332-hulk.jpg"
-              class="card-img"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Hulk</h5>
-              <p class="card-text">Hulk Vol 2 #2 (April, 2008) (as A-Bomb)</p>
-              <p class="card-text">
-                <small class="text-muted">Apariencia: good</small>
-              </p>
-
-              <p></p>
-              <p>
-                <button type="button" class="btn btn-primary btn-sm">
-                  Detalles
-                </button>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-3 espacio" style="max-width: 540px">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img
-              src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/1-a-bomb.jpg"
-              class="card-img"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Hulk</h5>
-              <p class="card-text">Hulk Vol 2 #2 (April, 2008) (as A-Bomb)</p>
-              <p class="card-text">
-                <small class="text-muted">Apariencia: good</small>
-              </p>
-
-              <p></p>
-              <p>
-                <button type="button" class="btn btn-primary btn-sm">
-                  Detalles
-                </button>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card mb-3 espacio" style="max-width: 540px">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img
-              src="https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/images/md/332-hulk.jpg"
-              class="card-img"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Hulk</h5>
-              <p class="card-text">Hulk Vol 2 #2 (April, 2008) (as A-Bomb)</p>
-              <p class="card-text">
-                <small class="text-muted">Apariencia: good</small>
+                <small class="text-muted">Apariencia: {{informacion.biography.alignment}}</small>
               </p>
 
               <p></p>
