@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "heroes"
+  "defaultProject": "heroes",
+  "cli": {
+    "analytics": "33e34a1a-c057-4d51-a46e-06790cf6a97b"
+  }
 }
