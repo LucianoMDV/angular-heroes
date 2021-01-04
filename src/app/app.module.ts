@@ -8,17 +8,28 @@ import { DetallesComponent } from './pages/detalles/detalles.component';
 import { TituloPipe } from './pipes/titulo.pipe';
 
 import {HttpClientModule} from '@angular/common/http';
+import { OrdenarAparienciaPipe } from './pipes/ordenar-apariencia.pipe';
+import { OrdenarNombrePipe } from './pipes/ordenar-nombre.pipe';
+import { BuscarNombrePipe } from './pipes/buscar-nombre.pipe';
+import { BuscarAparienciaPipe } from './pipes/buscar-apariencia.pipe';
+
+import {FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     DetallesComponent,
-    TituloPipe
+    TituloPipe,
+    OrdenarAparienciaPipe,
+    OrdenarNombrePipe,
+    BuscarNombrePipe,
+    BuscarAparienciaPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
