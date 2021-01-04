@@ -14,6 +14,8 @@ import { BuscarNombrePipe } from './pipes/buscar-nombre.pipe';
 import { BuscarAparienciaPipe } from './pipes/buscar-apariencia.pipe';
 
 import {FormsModule} from '@angular/forms';
+import { QuirepnomPipe } from './pipes/quirepnom.pipe';
+import { QuirepapaPipe } from './pipes/quirepapa.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +25,9 @@ import {FormsModule} from '@angular/forms';
     OrdenarAparienciaPipe,
     OrdenarNombrePipe,
     BuscarNombrePipe,
-    BuscarAparienciaPipe
+    BuscarAparienciaPipe,
+    QuirepnomPipe,
+    QuirepapaPipe
   ],
   imports: [
     BrowserModule,
