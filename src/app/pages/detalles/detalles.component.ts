@@ -8,7 +8,7 @@ import { HeroesService } from '../../services/heroes.service';
   styleUrls: ['./detalles.component.css'],
 })
 export class DetallesComponent implements OnInit {
-  detalles: any = '';
+  detalles: any = null;
   constructor(private route: ActivatedRoute, public hs: HeroesService) {
     route.params.subscribe((data) => {
       // console.log(data['id']);

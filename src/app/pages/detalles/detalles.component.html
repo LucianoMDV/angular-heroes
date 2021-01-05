@@ -1,4 +1,4 @@
-<div class="form-signin">
+<div class="form-signin" *ngIf="detalles">
   <img class="mb-4" [src]="detalles.images.lg" alt="" width="300" height="420">
   <h4>Estadísticas de: {{detalles.name}} </h4>
   <h4 class="h4 mb-3 font-weight-normal">Inteligencia: {{detalles.powerstats.intelligence}}</h4>
