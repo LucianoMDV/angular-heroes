@@ -7,7 +7,7 @@ export class QuirepnomPipe implements PipeTransform {
 
   transform(value: any): any {
     return value.filter(
-      (value, i, arr) => arr.findIndex(
+      (value: any, i: any, arr: any) => arr.findIndex(
         data => data.name === value.name) === i);
   }
 

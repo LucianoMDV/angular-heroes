@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class TituloPipe implements PipeTransform {
 
   transform(value: string): string {
-    let encabezado = 'Album' + value;
+    const encabezado = 'Album' + value;
     return encabezado;
   }
 

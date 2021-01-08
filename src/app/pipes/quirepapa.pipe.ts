@@ -7,7 +7,7 @@ export class QuirepapaPipe implements PipeTransform {
 
   transform(value1: any): any {
     return value1.filter(
-      (value1, i, arr) => arr.findIndex(
+      (value1: any, i: any, arr: any) => arr.findIndex(
         data => data.biography.alignment === value1.biography.alignment) === i);
   }
 

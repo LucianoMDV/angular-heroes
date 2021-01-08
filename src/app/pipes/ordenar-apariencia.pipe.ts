@@ -10,7 +10,7 @@ export class OrdenarAparienciaPipe implements PipeTransform {
    * Es un ordenamiento ASD de acuerdo al codigo ASCII por lo tanto
    * primero toma signos o gerogrificos y despues los caractees o numero.
    * Funciona solo dentro de un ngFor porque agarra dos elementos para comparar
-   * @param value
+   * @param value parametro
    */
   transform(value: any): any {
     return value.sort((a, b) => {

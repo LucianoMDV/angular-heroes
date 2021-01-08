@@ -1,6 +1,6 @@
 export interface Heroe {
-  id: string,
-  name: string,
+  id: string;
+  name: string;
   powerstats: {
     intelligence: string,
     strength: string,
@@ -8,16 +8,16 @@ export interface Heroe {
     durability: string,
     power: string,
     combat: string
-  },
+  };
   appearance: {
     male: string
-  },
+  };
   biography: {
     firstAppearance: string,
     alignment: string
-  },
+  };
   images: {
     md: string,
     lg: string
-  }
+  };
 }

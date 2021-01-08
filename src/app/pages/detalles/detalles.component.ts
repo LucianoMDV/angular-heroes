@@ -12,7 +12,7 @@ export class DetallesComponent implements OnInit {
   constructor(private route: ActivatedRoute, public hs: HeroesService) {
     route.params.subscribe((data) => {
       // console.log(data['id']);
-      hs.detalles(data['id'])
+      hs.detalles(data.id)
       .subscribe( respuesta => {
         this.detalles = respuesta;
         console.log(this.detalles);
