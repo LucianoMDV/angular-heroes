@@ -16,6 +16,7 @@ import { BuscarAparienciaPipe } from './pipes/buscar-apariencia.pipe';
 import {FormsModule} from '@angular/forms';
 import { QuirepnomPipe } from './pipes/quirepnom.pipe';
 import { QuirepapaPipe } from './pipes/quirepapa.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { QuirepapaPipe } from './pipes/quirepapa.pipe';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
